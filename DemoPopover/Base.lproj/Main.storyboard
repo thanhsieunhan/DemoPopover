@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoPopover" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIC-St-Tcq">
+                                <rect key="frame" x="41" y="440" width="47" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Like">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="action_Like:" destination="BYZ-38-t0r" eventType="touchUpInside" id="35L-qL-O3i"/>
+                                    <segue destination="A3b-RC-xPN" kind="popoverPresentation" identifier="showView" popoverAnchorView="CIC-St-Tcq" id="zUU-mp-OEP">
+                                        <popoverArrowDirection key="popoverArrowDirection" down="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elM-xJ-JeS">
+                                <rect key="frame" x="118" y="440" width="105" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Comment">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bax-9l-kGn">
+                                <rect key="frame" x="254" y="438" width="58" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Thành Siêu Nhân" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JF-vp-V4c">
+                                <rect key="frame" x="80" y="20" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="luffy-one-piece.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Oho-5Y-qHS">
+                                <rect key="frame" x="12" y="478" width="75" height="75"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="i love you, too!! ahihi :3 " borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NuM-MJ-0cV">
+                                <rect key="frame" x="92" y="478" width="220" height="75"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="luffy-one-piece.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4Iw-6b-Eik">
+                                <rect key="frame" x="12" y="129" width="300" height="300"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boa_hancock_avatar_by_namirobinloverx-d97dlqb.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="24D-dJ-1kt">
+                                <rect key="frame" x="12" y="20" width="60" height="60"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="July 8 at 16:6 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uR-Xi-gFP">
+                                <rect key="frame" x="80" y="52" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I love you, chiu chiu :-* &lt;3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAQ-YH-Hkf">
+                                <rect key="frame" x="12" y="84" width="300" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="greyLike.png" translatesAutoresizingMaskIntoConstraints="NO" id="GHR-uB-mFr">
+                                <rect key="frame" x="12" y="438" width="30" height="30"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comment.png" translatesAutoresizingMaskIntoConstraints="NO" id="woG-iK-bZM">
+                                <rect key="frame" x="92" y="438" width="30" height="30"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="share.png" translatesAutoresizingMaskIntoConstraints="NO" id="cGz-nx-gWa">
+                                <rect key="frame" x="225" y="438" width="30" height="30"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.86297254943191404" blue="0.99484707446808507" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="198" y="136"/>
+        </scene>
+        <!--Like View Controller-->
+        <scene sceneID="8BL-rD-Pq1">
+            <objects>
+                <viewController id="A3b-RC-xPN" customClass="LikeViewController" customModule="DemoPopover" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eea-f0-2rR"/>
+                        <viewControllerLayoutGuide type="bottom" id="V7u-mS-28X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PNk-Jd-z7Z">
+                        <rect key="frame" x="0.0" y="0.0" width="270" height="40"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHV-HX-jrK">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                <state key="normal" image="like_1.png"/>
+                                <connections>
+                                    <action selector="action_Like:" destination="A3b-RC-xPN" eventType="touchUpInside" id="EOw-8h-gis"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4a-lp-OvY">
+                                <rect key="frame" x="45" y="0.0" width="40" height="40"/>
+                                <state key="normal" image="love.png"/>
+                                <connections>
+                                    <action selector="action_Like:" destination="A3b-RC-xPN" eventType="touchUpInside" id="hz0-mw-v3m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NyI-Sh-3Mm">
+                                <rect key="frame" x="90" y="0.0" width="40" height="40"/>
+                                <state key="normal" image="haha.png"/>
+                                <connections>
+                                    <action selector="action_Like:" destination="A3b-RC-xPN" eventType="touchUpInside" id="PdQ-m1-Cgd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEC-aI-Lq3">
+                                <rect key="frame" x="135" y="0.0" width="40" height="40"/>
+                                <state key="normal" image="wow.png"/>
+                                <connections>
+                                    <action selector="action_Like:" destination="A3b-RC-xPN" eventType="touchUpInside" id="DhC-BD-FXB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="105" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CH9-Mu-ilB">
+                                <rect key="frame" x="180" y="0.0" width="40" height="40"/>
+                                <state key="normal" image="sad.png"/>
+                                <connections>
+                                    <action selector="action_Like:" destination="A3b-RC-xPN" eventType="touchUpInside" id="9DV-LG-HB1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="106" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdq-7W-L4g">
+                                <rect key="frame" x="225" y="0.0" width="40" height="40"/>
+                                <state key="normal" image="angry.png"/>
+                                <connections>
+                                    <action selector="action_Like:" destination="A3b-RC-xPN" eventType="touchUpInside" id="rTA-J5-Bm1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="270" height="40"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mH7-BR-ToU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="633" y="188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="angry.png" width="98" height="98"/>
+        <image name="boa_hancock_avatar_by_namirobinloverx-d97dlqb.jpg" width="433" height="455"/>
+        <image name="comment.png" width="30" height="30"/>
+        <image name="greyLike.png" width="40" height="40"/>
+        <image name="haha.png" width="99" height="99"/>
+        <image name="like_1.png" width="99" height="99"/>
+        <image name="love.png" width="96" height="96"/>
+        <image name="luffy-one-piece.jpg" width="479" height="480"/>
+        <image name="sad.png" width="98" height="98"/>
+        <image name="share.png" width="30" height="30"/>
+        <image name="wow.png" width="96" height="96"/>
+    </resources>
+</document>
